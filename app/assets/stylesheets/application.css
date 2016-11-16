@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+/* HACK: CSS reset since browsers are stupid and inserts their own margins sometimes
+   See: http://stackoverflow.com/a/18772399 */
+/** {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Helvetica;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.action {
+	border: 2px solid black;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px;
+}
+
+/* Góra strony */
+.header {
+  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg) 
+  no-repeat center center; 
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+}
+
+/* Góra strony. Tekst i przycisk */
+.header .container {
+	position: relative;
+	top: 280px;
+}
+
+.header h1 {
+	font-size: 60px;
+}
+
+#learn_more_button {
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 10px 30px 10px 30px;
+} 
+
+#learn_more_button:hover {
+	background: grey;
+}
+
+
+/* "By Natalia Barańska" */
+.header p {
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+	text-transform: uppercase; 
+}
+
+/* Pasek: Projects, About, Contact */
+.nav { 
+	background: black;
+	height: 80px; 
+	width: 100%;
+}
+
+.nav ul {
+	height: 80px;
+	list-style: none;
+	margin: 0 auto; 
+	padding: 0;
+	display: inline-block;
+}
+
+/* Fak! Jak je zrobić na środku? */
+.nav ul li {
+	color: white;
+	display: inline-block; 
+	height: 80px;
+	line-height: 80px; 
+	list-style: none;
+	padding: 0 10px;
+	transition: background .5s; 
+}
+
+.main .container {
+	margin: 80px auto;
+	/* Vertical alignment: http://www.vertical-align.com/ */
+	display: table; height: 200px; position: relative; overflow: hidden;
+}
+
+.main img {
+	float: left;
+	margin: 50px 80px 50px 0;
+	width: 50%;
+	/* Vertical alignment: http://www.vertical-align.com/ */
+	display: table-cell; vertical-align: middle;
+	height: 400px;
+	width: 320px;
+}
+
+.main .about {
+	/* Vertical alignment: http://www.vertical-align.com/ */
+	display: table-cell; vertical-align: middle;
+}
+
+.nav .container {
+	text-align: center;
+}
+

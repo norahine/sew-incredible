@@ -1,0 +1,23 @@
+<h1><font face="helvetica" color=#1960a1> Wszystkie instrukcje</font></h1>
+<font face="helvetica"><%= link_to 'Nowa instrukcja', new_blueprint_path %></font>
+<table>
+  <tr>
+    <th>Tytuł</th>
+    <th>Rodzaj materiału</th>
+   
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @blueprints.each do |blueprint| %>
+    <tr>
+      <td><%= blueprint.title %></td>
+      <td><%= blueprint.fabric_type %></td>
+      <td><%= link_to 'Pokaż', blueprint_path(blueprint), class: 'action' %></td>
+      <td><%= link_to 'Edytuj', edit_blueprint_path(blueprint), class: 'action' %></td>
+      <td><%= link_to 'Usuń', blueprint_path(blueprint),
+              method: :delete,
+              data: { confirm: 'Na pewno usunąć?' }, class: 'action' %></td>
+    </tr>
+  <% end %>
+</table>
+

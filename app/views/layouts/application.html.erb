@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Sew Incredible</title>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="container">
+				<h1>Sew Incredible</h1>
+				<p>by Natalia Barańska</p>
+				<a href="#" id="learn_more_button">Learn More</a>
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="container">
+					<ul>
+						<li>Projects</li>
+						<li>About me</li>
+						<li>Contact</li>
+					</ul>
+		  	</div>
+		</div>
+
+		<div class="main">
+			<div class="container">
+				<%= yield %>
+		    </div>
+		</div>
+	</body>
+</html>

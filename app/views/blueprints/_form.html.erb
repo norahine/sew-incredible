@@ -1,0 +1,49 @@
+<%= form_for @blueprint do |form| %>
+  
+  <% if @blueprint.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@blueprint.errors.count, "error") %> prohibited
+        this blueprint from being saved:
+      </h2>
+      <ul>
+        <% @blueprint.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :title, "Tytuł" %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :fabric_type, "Rodzaj materiału" %><br>
+    <%= form.text_field :fabric_type %>
+  </p>
+
+  <p>
+    <%= form.label :fabric_length, "Długość materiału" %><br>
+    <%= form.text_field :fabric_length %>
+  </p>
+
+  <p>
+    <%= form.label :instructions, "Instrukcje" %><br>
+    <%= form.text_area :instructions %>
+  </p>
+
+  <p>
+    <%= form.label :additional_comments, "Dodatkowy komentarz" %><br>
+    <%= form.text_area :additional_comments %>
+  </p>
+
+  <p id="submit_button">
+    <% if @blueprint.new_record? %>
+      <%= form.submit "Dodaj" %>
+    <% else %>
+      <%= form.submit "Aktualizuj" %>
+    <% end %>
+  </p>
+  <% end %>
