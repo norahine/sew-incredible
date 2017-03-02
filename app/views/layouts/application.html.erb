@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 	<title>Sew Incredible</title>
 		<%= csrf_meta_tags %>
 
@@ -10,27 +11,54 @@
 
 	<body>
 		<div class="header">
+			<ul class="language-switch">
+				<% I18n.available_locales.each do |locale| %>
+					<li class="language<%= I18n.locale == locale ? ' active' : '' %>">
+						<%= link_to locale.upcase, { locale: locale } %>
+					</li>
+				<% end %>
+
+<!-- 				<li class="language<%= I18n.locale == 'pl' ? ' active' : '' %>">
+					<a href="http://sew-incredible.dev/blueprints?locale=pl">PL</a>
+				</li>
+				<li class="language<%= I18n.locale == 'en' ? ' active' : '' %>">
+					<a href="http://sew-incredible.dev/blueprints?locale=en">EN</a>
+				</li> -->
+			</ul>
 			<div class="container">
 				<h1>Sew Incredible</h1>
 				<p>by Natalia Barańska</p>
-				<a href="#" id="learn_more_button">Learn More</a>
+				<a href="#" id="learn_more_button"><%=t(:more)%></a>
 			</div>
 		</div>
 
 		<div class="nav">
 			<div class="container">
 					<ul>
-						<li>Projects</li>
-						<li>About me</li>
-						<li>Contact</li>
+						<li><%= link_to t(:all_blueprints), blueprints_path %></li>
+						<li><%= link_to t(:new_blueprint), new_blueprint_path %></li>
+						<li><%= link_to t(:about),main_about_path %></li>
 					</ul>
 		  	</div>
 		</div>
+
 
 		<div class="main">
 			<div class="container">
 				<%= yield %>
 		    </div>
+		</div>
+
+		<div class="footer">
+			<table>
+				<tbody>
+					<tr>
+						<td id="copyright"> <p>&copy; Sew Incredible, 2016</p></td>
+						<td id="website"><a href="#">SewIncredible.com</a></td>
+						<td id="insta"><a target="_blank" title="follow me on instagram" href="http://www.instagram.com/nataliabaranska"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0></a></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</body>
 </html>

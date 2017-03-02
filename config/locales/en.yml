@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  show: Show
+  edit: Edit
+  delete: Delete
+  title: Title
+  fabric: Fabric Type
+  sure_delete: Are you sure to delete?
+
+  more: Learn More
+  about: About Me
+  new_blueprint: New Blueprint
+  all_blueprints: All Blueprints
+
+  contact: Contact

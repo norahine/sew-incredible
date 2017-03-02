@@ -1,26 +1,26 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Tytuł:</strong>
   <%= @blueprint.title %>
 </p>
  
 <p>
-  <strong>Fabric type:</strong>
+  <strong>Rodzaj materiału:</strong>
   <%= @blueprint.fabric_type %>
 </p>
 
 <p>
-  <strong>Fabric length:</strong>
+  <strong>Długość materiału:</strong>
   <%= @blueprint.fabric_length %>
 </p>
 
 <p>
-  <strong>Instructions:</strong>
-  <%= @blueprint.instructions %>
+  <strong>Instrukcje:</strong>
+  <%= simple_format @blueprint.instructions %>
 </p>
 
 <p>
-  <strong>Additional comments:</strong>
-  <%= @blueprint.additional_comments %>
+  <strong>Dodatkowy komentarz:</strong>
+  <%= simple_format @blueprint.additional_comments %>
 </p>
 
-<%= link_to 'Cofnij', blueprints_path %>
+<%= link_to 'Cofnij', blueprints_path, class: "back"%>

@@ -16,27 +16,27 @@
 
   <p>
     <%= form.label :title, "Tytuł" %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, size: 38 %>
   </p>
 
   <p>
     <%= form.label :fabric_type, "Rodzaj materiału" %><br>
-    <%= form.text_field :fabric_type %>
+    <%= form.text_field :fabric_type, size: 38 %>
   </p>
 
   <p>
     <%= form.label :fabric_length, "Długość materiału" %><br>
-    <%= form.text_field :fabric_length %>
+    <%= form.text_field :fabric_length, size: 20 %>
   </p>
 
   <p>
     <%= form.label :instructions, "Instrukcje" %><br>
-    <%= form.text_area :instructions %>
+    <%= form.text_area :instructions, size: "40x10" %>
   </p>
 
   <p>
     <%= form.label :additional_comments, "Dodatkowy komentarz" %><br>
-    <%= form.text_area :additional_comments %>
+    <%= form.text_area :additional_comments, size: "40x5" %>
   </p>
 
   <p id="submit_button">

@@ -40,29 +40,25 @@ a {
 	text-decoration: none;
 }
 
-a.action {
-	border: 2px solid black;
-}
-
 .container {
 	margin: 0 auto;
 	max-width: 940px; 
 	padding: 0 10px;
 }
 
-/* Góra strony */
+				/* Góra strony */
 .header {
   background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg) 
   no-repeat center center; 
   background-size: cover;
-  height: 600px;
-  text-align: center;
+  height: 500px;
 }
 
-/* Góra strony. Tekst i przycisk */
+				/* Góra strony. Tekst i przycisk */
 .header .container {
 	position: relative;
-	top: 280px;
+	top: 180px;
+	text-align: center;
 }
 
 .header h1 {
@@ -90,7 +86,7 @@ a.action {
 	text-transform: uppercase; 
 }
 
-/* Pasek: Projects, About, Contact */
+/* Pasek: Wszystkie intrukcje etc. */
 .nav { 
 	background: black;
 	height: 80px; 
@@ -116,6 +112,14 @@ a.action {
 	transition: background .5s; 
 }
 
+.nav ul li a {
+	color: white;
+}
+
+.nav ul li a:hover {
+	font-weight: bold;
+}
+
 .main .container {
 	margin: 80px auto;
 	/* Vertical alignment: http://www.vertical-align.com/ */
@@ -123,13 +127,13 @@ a.action {
 }
 
 .main img {
-	float: left;
+	/* float: left;
 	margin: 50px 80px 50px 0;
-	width: 50%;
+	width: 50%; /*
 	/* Vertical alignment: http://www.vertical-align.com/ */
-	display: table-cell; vertical-align: middle;
+	/* display: table-cell; vertical-align: middle;
 	height: 400px;
-	width: 320px;
+	width: 320px; */
 }
 
 .main .about {
@@ -141,3 +145,151 @@ a.action {
 	text-align: center;
 }
 
+.main th, .main td {
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+}
+
+.main th {
+	font-size: 20px;
+}
+
+/* Pokaż, edutuj, usuń – guziki */
+.main td a {
+	background: black;
+	color: white;
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;	
+}
+
+/*mouse over*/
+td a:hover {
+	background: grey;
+}
+
+/* Any link with a class of "Back"*/
+a.back {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 30px 5px 30px;
+	background-color: black;
+	color: white;
+}
+
+a.back:hover {
+	background: grey;
+}
+
+				/*FOOTER*/
+
+.footer {
+	background: black;
+	/*height: 80px; */
+	width: 100%;
+	color: white;
+	display: table;
+    width: 100%;
+    font-size: 12px;
+    /*padding: 5px 30px 5px 30px;*/
+}
+
+.footer table {
+	width: 100%;
+}
+
+.footer td {
+	width: 33%;
+	height: 80px;
+}
+
+.footer a:hover {
+	font-weight: bold;
+}
+
+#copyright p {
+	margin-left: 25px;
+}
+
+#website {
+	text-align: center;
+}
+
+#website a {
+	color: white;
+}
+
+#insta {
+	text-align: right;
+}
+
+#insta a {
+	margin-right: 25px;
+}
+
+				/* O MNIE */
+#about_me {
+	text-align: center;
+}
+
+.email-btn {
+	margin-left: 20px;
+}
+
+.insta-btn {
+	margin-left: 20px;
+}
+
+.about-table {
+	margin: 0 auto;
+}
+
+#my-picture {
+  
+}
+
+#my-picture img {
+	width: 50%;
+	display: table-cell; vertical-align: middle;
+	margin: 80px auto 20px auto;
+}
+
+/*Zmiana wersji strony – język*/
+
+.language-switch {
+	list-style: none;
+	float: right;
+	/*margin: 0 0 0 20px;*/
+	position: relative;
+	top: 19px;
+	right: 19px;
+	width: 84px;
+}
+
+.language-switch li {
+  float: left;
+  padding: 0 7px;
+  position: relative;
+  background: transparent url('data:image/gif;base64,R0lGODdhAQAMAPAAAJmZmQAAACwAAAAAAQAMAEACA4SPVgA7') no-repeat left center;
+  list-style: none;
+ /* margin: 0;
+  padding: 0 7px;
+  min-width: 18px*/
+}
+
+/*Get rid of the line*/
+.language-switch li:first-child { 
+  background-color: yellow;
+  background: 0;
+}
+
+.language-switch li a {
+	color: black;
+}
+
+.language-switch li a:hover {
+	font-weight: bold;
+}
+
+.language-switch li.active a {
+	font-weight: bold;
+}
