@@ -38,7 +38,7 @@ a {
 /* Góra strony */
 .header {
 /*  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg);*/
-  background: url(/assets/background.jpg);
+  background: asset-url("background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 62%;
   background-size: cover;
