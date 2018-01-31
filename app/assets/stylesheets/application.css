@@ -10,22 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require reset
  *= require_tree .
  *= require_self
  */
 
-
-/* HACK: CSS reset since browsers are stupid and inserts their own margins sometimes
-   See: http://stackoverflow.com/a/18772399 */
-/** {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}*/
 
 html, body {
     margin: 0;
@@ -42,16 +31,17 @@ a {
 
 .container {
 	margin: 0 auto;
-	max-width: 940px; 
+	max-width: 940px;
 	padding: 0 10px;
 }
 
-				/* Góra strony */
+/* Góra strony */
 .header {
-  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg) 
-  no-repeat center center; 
+/*  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg);*/
+  background-image: url(/assets/background.jpg);
+  no-repeat center center;
   background-size: cover;
-  height: 500px;
+  height: 460px;
 }
 
 				/* Góra strony. Tekst i przycisk */
@@ -70,7 +60,7 @@ a {
 	background: black;
 	color: white;
 	padding: 10px 30px 10px 30px;
-} 
+}
 
 #learn_more_button:hover {
 	background: grey;
@@ -83,20 +73,20 @@ a {
 	letter-spacing: 8px;
 	margin-bottom: 40px;
 	margin-top: 0;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 }
 
 /* Pasek: Wszystkie intrukcje etc. */
-.nav { 
+.nav {
 	background: black;
-	height: 80px; 
+	height: 80px;
 	width: 100%;
 }
 
 .nav ul {
 	height: 80px;
 	list-style: none;
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding: 0;
 	display: inline-block;
 }
@@ -104,12 +94,12 @@ a {
 /* Fak! Jak je zrobić na środku? */
 .nav ul li {
 	color: white;
-	display: inline-block; 
+	display: inline-block;
 	height: 80px;
-	line-height: 80px; 
+	line-height: 80px;
 	list-style: none;
 	padding: 0 10px;
-	transition: background .5s; 
+	transition: background .5s;
 }
 
 .nav ul li a {
@@ -152,6 +142,7 @@ a {
 
 .main th {
 	font-size: 20px;
+  text-align: left;
 }
 
 /* Pokaż, edutuj, usuń – guziki */
@@ -159,7 +150,7 @@ a {
 	background: black;
 	color: white;
 	padding: 5px 30px 5px 30px;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 /*mouse over*/
@@ -180,17 +171,18 @@ a.back:hover {
 	background: grey;
 }
 
-				/*FOOTER*/
+
+/*FOOTER*/
 
 .footer {
 	background: black;
-	/*height: 80px; */
+	height: 80px;
 	width: 100%;
 	color: white;
 	display: table;
-    width: 100%;
-    font-size: 12px;
-    /*padding: 5px 30px 5px 30px;*/
+  width: 100%;
+  font-size: 12px;
+  /*padding: 5px 30px 5px 30px;*/
 }
 
 .footer table {
@@ -199,7 +191,12 @@ a.back:hover {
 
 .footer td {
 	width: 33%;
-	height: 80px;
+	/*height: 80px;*/
+}
+
+.footer td > * {
+  position: relative;
+  top: 4px;
 }
 
 .footer a:hover {
@@ -224,9 +221,16 @@ a.back:hover {
 
 #insta a {
 	margin-right: 25px;
+  position: relative;
+  top: 20px;
 }
 
-				/* O MNIE */
+#insta a:hover {
+  background-color: transparent;
+}
+
+/* O MNIE */
+
 #about_me {
 	text-align: center;
 }
@@ -244,7 +248,7 @@ a.back:hover {
 }
 
 #my-picture {
-  
+
 }
 
 #my-picture img {
@@ -277,7 +281,7 @@ a.back:hover {
 }
 
 /*Get rid of the line*/
-.language-switch li:first-child { 
+.language-switch li:first-child {
   background-color: yellow;
   background: 0;
 }
