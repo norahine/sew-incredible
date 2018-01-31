@@ -38,8 +38,9 @@ a {
 /* Góra strony */
 .header {
 /*  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg);*/
-  background-image: url(/assets/background.jpg);
-  no-repeat center center;
+  background: url(/assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 62%;
   background-size: cover;
   height: 460px;
 }
