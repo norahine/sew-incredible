@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20161112113955) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "blueprints", force: :cascade do |t|
     t.string   "title"
     t.string   "fabric_type"
