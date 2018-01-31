@@ -25,7 +25,7 @@ en:
   delete: Delete
   title: Title
   fabric: Fabric Type
-  sure_delete: Are you sure to delete?
+  sure_delete: Are you sure you wish to delete this blueprint?
 
   more: Learn More
   about: About Me
