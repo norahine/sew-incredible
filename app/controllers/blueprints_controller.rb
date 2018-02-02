@@ -31,7 +31,7 @@ class BlueprintsController < ApplicationController
 		if @blueprint.update(blueprint_params)
 			redirect_to @blueprint
 		else
-			render 'edit'
+			render "edit"
 		end
 	end
 
