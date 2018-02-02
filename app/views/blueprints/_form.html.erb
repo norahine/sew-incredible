@@ -1,10 +1,7 @@
-<%= form_for @blueprint do |form| %>
-  
   <% if @blueprint.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@blueprint.errors.count, "error") %> prohibited
-        this blueprint from being saved:
+        <%= t "blueprints.edit.error_message", count: @blueprint.errors.count %>
       </h2>
       <ul>
         <% @blueprint.errors.full_messages.each do |msg| %>
@@ -14,36 +11,39 @@
     </div>
   <% end %>
 
+<br />
+
+<%= form_for @blueprint do |form| %>
   <p>
-    <%= form.label :title, "Tytuł" %><br>
-    <%= form.text_field :title, size: 38 %>
+    <%= form.label :title, t(:title) %>
+    <%= form.text_field :title, size: 38, class: "medium-margin-bottom" %>
   </p>
 
   <p>
-    <%= form.label :fabric_type, "Rodzaj materiału" %><br>
-    <%= form.text_field :fabric_type, size: 38 %>
+    <%= form.label :fabric_type, t(:fabric_type) %>
+    <%= form.text_field :fabric_type, size: 38, class: "medium-margin-bottom" %>
   </p>
 
   <p>
-    <%= form.label :fabric_length, "Długość materiału" %><br>
-    <%= form.text_field :fabric_length, size: 20 %>
+    <%= form.label :fabric_length, t(:fabric_length) %>
+    <%= form.text_field :fabric_length, size: 20, class: "medium-margin-bottom" %>
   </p>
 
   <p>
-    <%= form.label :instructions, "Instrukcje" %><br>
-    <%= form.text_area :instructions, size: "40x10" %>
+    <%= form.label :instructions, t(:instructions) %>
+    <%= form.text_area :instructions, size: "40x10", class: "medium-margin-bottom" %>
   </p>
 
   <p>
-    <%= form.label :additional_comments, "Dodatkowy komentarz" %><br>
-    <%= form.text_area :additional_comments, size: "40x5" %>
+    <%= form.label :additional_comments, t(:comment) %>
+    <%= form.text_area :additional_comments, size: "40x5", class: "medium-margin-bottom" %>
   </p>
 
-  <p id="submit_button">
-    <% if @blueprint.new_record? %>
-      <%= form.submit "Dodaj" %>
-    <% else %>
-      <%= form.submit "Aktualizuj" %>
-    <% end %>
-  </p>
+  <%= link_to t(:cancel), blueprints_path, class: "back" %>
+
+  <% if @blueprint.new_record? %>
+    <%= form.submit t(:add), class: "submit-button" %>
+  <% else %>
+    <%= form.submit t(:update), class: "submit-button" %>
   <% end %>
+<% end %>

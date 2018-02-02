@@ -1,26 +1,40 @@
-<p>
-  <strong>Tytuł:</strong>
-  <%= @blueprint.title %>
-</p>
- 
-<p>
-  <strong>Rodzaj materiału:</strong>
-  <%= @blueprint.fabric_type %>
-</p>
+<div class="blueprint-details">
+  <p>
+    <strong><%= t(:title) %>:</strong>
+    <%= @blueprint.title %>
+  </p>
 
-<p>
-  <strong>Długość materiału:</strong>
-  <%= @blueprint.fabric_length %>
-</p>
+  <p>
+    <strong><%= t(:fabric_type) %>:</strong>
+    <%= @blueprint.fabric_type %>
+  </p>
 
-<p>
-  <strong>Instrukcje:</strong>
-  <%= simple_format @blueprint.instructions %>
-</p>
+  <p>
+    <strong><%= t(:fabric_length) %>:</strong>
+    <% if @blueprint.fabric_length.present? %>
+      <%= @blueprint.fabric_length %>
+    <% else %>
+      <%= t(:not_provided) %>
+    <% end %>
+  </p>
 
-<p>
-  <strong>Dodatkowy komentarz:</strong>
-  <%= simple_format @blueprint.additional_comments %>
-</p>
+  <p>
+    <strong><%= t(:instructions) %>:</strong>
+    <% if @blueprint.instructions.present? %>
+      <%= simple_format @blueprint.instructions %>
+    <% else %>
+      <%= t(:not_provided) %>
+    <% end %>
+  </p>
 
-<%= link_to 'Cofnij', blueprints_path, class: "back"%>
+  <p>
+    <strong><%= t(:comment) %>:</strong>
+    <% if @blueprint.additional_comments.present? %>
+      <%= simple_format @blueprint.additional_comments %>
+    <% else %>
+      <%= t(:not_provided) %>
+    <% end %>
+  </p>
+
+  <%= link_to t(:cancel), blueprints_path, class: "back" %>
+</div>

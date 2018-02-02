@@ -35,9 +35,10 @@ a {
 	padding: 0 10px;
 }
 
-/* Góra strony */
+// Header
+
 .header {
-/*  background: url(https://dl.dropboxusercontent.com/u/41493216/FullSizeRender.jpg);*/
+  // Needed to add 'asset' because of fingerprints on heroku
   background: asset-url("background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 62%;
@@ -45,15 +46,22 @@ a {
   height: 460px;
 }
 
-				/* Góra strony. Tekst i przycisk */
 .header .container {
 	position: relative;
 	top: 180px;
 	text-align: center;
-}
 
-.header h1 {
-	font-size: 60px;
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
 }
 
 #learn_more_button {
@@ -68,13 +76,15 @@ a {
 }
 
 
-/* "By Natalia Barańska" */
-.header p {
-	font-weight: 500;
-	letter-spacing: 8px;
-	margin-bottom: 40px;
-	margin-top: 0;
-	text-transform: uppercase;
+// Main part
+.container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h1.all-instructions {
+  margin-left: 14px;
 }
 
 /* Pasek: Wszystkie intrukcje etc. */
@@ -90,30 +100,39 @@ a {
 	margin: 0 auto;
 	padding: 0;
 	display: inline-block;
+
+  li {
+    color: white;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+  }
 }
 
 /* Fak! Jak je zrobić na środku? */
-.nav ul li {
-	color: white;
-	display: inline-block;
-	height: 80px;
-	line-height: 80px;
-	list-style: none;
-	padding: 0 10px;
-	transition: background .5s;
-}
+// .nav ul li {
+// 	color: white;
+// 	display: inline-block;
+// 	height: 80px;
+// 	line-height: 80px;
+// 	list-style: none;
+// 	padding: 0 10px;
+// 	transition: background .5s;
+// }
 
 .nav ul li a {
 	color: white;
 }
 
 .nav ul li a:hover {
-	font-weight: bold;
+	text-decoration: underline;
 }
 
 .main .container {
 	margin: 80px auto;
-	/* Vertical alignment: http://www.vertical-align.com/ */
 	display: table; height: 200px; position: relative; overflow: hidden;
 }
 
@@ -128,7 +147,7 @@ a {
 }
 
 .main .about {
-	/* Vertical alignment: http://www.vertical-align.com/ */
+//  Vertical alignment: http://www.vertical-align.com/
 	display: table-cell; vertical-align: middle;
 }
 
@@ -136,7 +155,8 @@ a {
 	text-align: center;
 }
 
-.main th, .main td {
+.main th,
+.main td {
 	border-bottom: 1px solid #ddd;
 	padding: 15px;
 }
@@ -163,18 +183,40 @@ td a:hover {
 a.back {
 	display: inline-block;
 	text-decoration: none;
-	padding: 5px 30px 5px 30px;
+	padding: 5px 42px 5px 42px;
 	background-color: black;
 	color: white;
+  margin-left: 2px;
 }
 
-a.back:hover {
+.submit-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px 30px 5px 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-width: 0;
+  margin: 0;
+  width: 130px;
+}
+
+a.back:hover,
+.submit-button:hover {
 	background: grey;
+  cursor: pointer;
 }
 
+.medium-margin-bottom {
+  margin-bottom: 18px;
+}
 
-/*FOOTER*/
+label {
+  margin-left: 2px;
+  display: block;
+}
 
+// Footer
 .footer {
 	background: black;
 	height: 80px;
@@ -183,25 +225,19 @@ a.back:hover {
 	display: table;
   width: 100%;
   font-size: 12px;
-  /*padding: 5px 30px 5px 30px;*/
-}
 
-.footer table {
-	width: 100%;
-}
+  table {
+    width: 100%;
+  }
 
-.footer td {
-	width: 33%;
-	/*height: 80px;*/
+  td {
+    width: 33%;
+  }
 }
 
 .footer td > * {
   position: relative;
   top: 4px;
-}
-
-.footer a:hover {
-	font-weight: bold;
 }
 
 #copyright p {
@@ -210,80 +246,66 @@ a.back:hover {
 
 #website {
 	text-align: center;
-}
 
-#website a {
-	color: white;
+  a {
+    color: white;
+  }
+
+  a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
 }
 
 #insta {
 	text-align: right;
+
+  a {
+    margin-right: 25px;
+    position: relative;
+    top: 20px;
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
 }
 
-#insta a {
-	margin-right: 25px;
-  position: relative;
-  top: 20px;
-}
-
-#insta a:hover {
-  background-color: transparent;
-}
-
-/* O MNIE */
-
+// About Me
 #about_me {
 	text-align: center;
 }
 
-.email-btn {
-	margin-left: 20px;
-}
-
+.email-btn,
 .insta-btn {
 	margin-left: 20px;
 }
 
 .about-table {
 	margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-#my-picture {
-
-}
-
-#my-picture img {
-	width: 50%;
-	display: table-cell; vertical-align: middle;
-	margin: 80px auto 20px auto;
-}
-
-/*Zmiana wersji strony – język*/
-
+// Language switch
 .language-switch {
 	list-style: none;
 	float: right;
-	/*margin: 0 0 0 20px;*/
 	position: relative;
 	top: 19px;
 	right: 19px;
 	width: 84px;
+
+  li {
+    float: left;
+    padding: 0 7px;
+    position: relative;
+    background: transparent url('data:image/gif;base64,R0lGODdhAQAMAPAAAJmZmQAAACwAAAAAAQAMAEACA4SPVgA7') no-repeat left center;
+    list-style: none;
+  }
 }
 
-.language-switch li {
-  float: left;
-  padding: 0 7px;
-  position: relative;
-  background: transparent url('data:image/gif;base64,R0lGODdhAQAMAPAAAJmZmQAAACwAAAAAAQAMAEACA4SPVgA7') no-repeat left center;
-  list-style: none;
- /* margin: 0;
-  padding: 0 7px;
-  min-width: 18px*/
-}
-
-/*Get rid of the line*/
+// Removes the line before 'PL'
 .language-switch li:first-child {
-  background-color: yellow;
   background: 0;
 }
 
@@ -291,10 +313,20 @@ a.back:hover {
 	color: black;
 }
 
-.language-switch li a:hover {
+.language-switch li a:hover,
+.language-switch li.active a {
 	font-weight: bold;
 }
 
-.language-switch li.active a {
-	font-weight: bold;
+#error_explanation > * {
+  font-size: 12px;
+  color: red;
+}
+
+.blueprint-details {
+
+}
+
+strong {
+  font-weight: bold;
 }

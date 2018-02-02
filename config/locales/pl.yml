@@ -13,3 +13,16 @@ pl:
   all_blueprints: Wszystkie instrukcje
 
   contact: Kontakt
+  follow_me: Obserwuj mnie
+  email_me: Email
+
+  material_type: Rodzaj materiału
+  fabric_length: Długość materiału
+  instructions: Instrukcje
+  comment: Dodatkowy komentarz
+
+  cancel: Anuluj
+  add: Dodaj
+  update: Aktualizuj
+  not_provided: Nie uzupełniono
+

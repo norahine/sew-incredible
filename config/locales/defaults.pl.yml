@@ -153,9 +153,9 @@ pl:
         other: jest za długie (maksymalnie %{count} znaków)
       too_short:
         few: jest za krótkie (przynajmniej %{count} znaki)
-        many: jest za krótkie (przynajmniej %{count} znaków)
+        many: jest za krótkie (przynajmniej %{count} znaki)
         one: jest za krótkie (przynajmniej jeden znak)
-        other: jest za krótkie (przynajmniej %{count} znaków)
+        other: jest za krótkie (przynajmniej %{count} znaki)
       wrong_length:
         few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
         many: ma nieprawidłową długość (powinna wynosić %{count} znaków)

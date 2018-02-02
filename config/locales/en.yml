@@ -33,3 +33,21 @@ en:
   all_blueprints: All Blueprints
 
   contact: Contact
+  follow_me: Follow me on Instagram
+  email_me: Email me
+
+  fabric_type: Fabric type
+  fabric_length: Fabric length
+  instructions: Instructions
+  comment: Comment
+
+  cancel: Cancel
+  add: Add
+  update: Update
+  not_provided: Not provided
+
+  blueprints:
+    edit:
+      error_message:
+        one: "%{count} error prohibited this blueprint from being saved:"
+        other: "%{count} errors prohibited this blueprint from being saved:"

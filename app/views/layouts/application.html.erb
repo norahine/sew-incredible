@@ -4,7 +4,6 @@
 
 	<title>Sew Incredible</title>
 		<%= csrf_meta_tags %>
-
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	</head>
@@ -17,13 +16,6 @@
 						<%= link_to locale.upcase, { locale: locale } %>
 					</li>
 				<% end %>
-
-<!-- 				<li class="language<%= I18n.locale == 'pl' ? ' active' : '' %>">
-					<a href="http://sew-incredible.dev/blueprints?locale=pl">PL</a>
-				</li>
-				<li class="language<%= I18n.locale == 'en' ? ' active' : '' %>">
-					<a href="http://sew-incredible.dev/blueprints?locale=en">EN</a>
-				</li> -->
 			</ul>
 			<div class="container">
 				<h1>Sew Incredible</h1>
@@ -41,7 +33,6 @@
 					</ul>
 		  	</div>
 		</div>
-
 
 		<div class="main">
 			<div class="container">
