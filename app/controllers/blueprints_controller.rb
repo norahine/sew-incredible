@@ -21,7 +21,7 @@ class BlueprintsController < ApplicationController
 		if @blueprint.save
 			redirect_to @blueprint
 		else
-			render 'new'
+			render "new"
 		end
 	end
 

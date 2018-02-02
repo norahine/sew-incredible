@@ -22,6 +22,7 @@
 en:
   show: Show
   edit: Edit
+  edit_2: Edit
   delete: Delete
   title: Title
   fabric: Fabric Type
@@ -51,3 +52,12 @@ en:
       error_message:
         one: "%{count} error prohibited this blueprint from being saved:"
         other: "%{count} errors prohibited this blueprint from being saved:"
+
+# http://guides.rubyonrails.org/i18n.html
+  activerecord:
+    models:
+      blueprint: Blueprint
+    attributes:
+      blueprint:
+        title: Title
+        fabric_type: Fabric type

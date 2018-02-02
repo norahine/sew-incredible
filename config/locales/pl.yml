@@ -1,7 +1,7 @@
 pl:
-
   show: Pokaż
   edit: Edytuj
+  edit_2: Edytuję
   delete: Usuń
   title: Tytuł
   fabric: Rodzaj materiału
@@ -25,4 +25,13 @@ pl:
   add: Dodaj
   update: Aktualizuj
   not_provided: Nie uzupełniono
+
+  # http://guides.rubyonrails.org/i18n.html
+  activerecord:
+    models:
+      blueprint: Blueprint
+    attributes:
+      blueprint:
+        title: Tytuł
+        fabric_type: Rodzaj materiału
 
