@@ -36,12 +36,11 @@ a {
 }
 
 // Header
-
 .header {
   // Needed to add 'asset' because of fingerprints on heroku
   background: asset-url("background.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 62%;
+  background-position: 50% 61%;
   background-size: cover;
   height: 460px;
 }
@@ -291,6 +290,14 @@ h3 {
   padding-bottom: 20px;
   line-height: 1.5;
   text-align: justify;
+
+  a {
+    color: grey;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 // Language switch
@@ -330,10 +337,32 @@ h3 {
   color: red;
 }
 
-.blueprint-details {
+// .blueprint-details {
 
+// }
+
+// User authentication forms
+.form {
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .field input {
+    margin-bottom: 18px!important;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  .secondary-info {
+    font-size: 12px;
+  }
 }
 
+// Custom classes
 strong {
   font-weight: bold;
 }

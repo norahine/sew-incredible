@@ -29,7 +29,14 @@
 					<ul>
 						<li><%= link_to t(:all_blueprints), blueprints_path %></li>
 						<li><%= link_to t(:new_blueprint), new_blueprint_path %></li>
-						<li><%= link_to t(:about), main_about_path %></li>
+						<li><%= link_to t(:about_nav), main_about_path %></li>
+						<!-- User authenitication -->
+						<% if user_signed_in? %>
+							<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+						<% else %>
+							<li><%= link_to "Log In", new_user_session_path %></li>
+							<li><%= link_to "Sign Up", new_user_registration_path %></li>
+						<% end %>
 					</ul>
 		  	</div>
 		</div>
