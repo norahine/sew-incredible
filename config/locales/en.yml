@@ -48,6 +48,10 @@ en:
   update: Update
   not_provided: Not provided
 
+  log_out: Log Out
+  log_in: Log In
+  sign_up: Sign Up
+
   blueprints:
     edit:
       error_message:
@@ -62,3 +66,10 @@ en:
       blueprint:
         title: Title
         fabric_type: Fabric type
+
+# Devise
+  password: Password
+  password_confirmation: Password confirmation
+  remember_me: Remember me
+  characters_minimum: characters minimum
+  forgot_password : Forgot your password?

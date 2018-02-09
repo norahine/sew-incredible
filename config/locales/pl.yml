@@ -27,6 +27,10 @@ pl:
   update: Aktualizuj
   not_provided: Nie uzupełniono
 
+  log_out: Wyloguj
+  log_in: Zaloguj
+  sign_up: Zarejestruj
+
   # http://guides.rubyonrails.org/i18n.html
   activerecord:
     models:
@@ -35,4 +39,11 @@ pl:
       blueprint:
         title: Tytuł
         fabric_type: Rodzaj materiału
+
+# Devise
+  password: Hasło
+  password_confirmation: Potwierdź hasło
+  remember_me: Pamiętaj mnie
+  characters_minimum: znaków minimum
+  forgot_password: Zapomniałeś hasło?
 
