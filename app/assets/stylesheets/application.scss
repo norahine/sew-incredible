@@ -160,7 +160,7 @@ td a:hover {
 .back-btn {
 	display: inline-block;
 	text-decoration: none !important;
-	padding: 5px 30px 5px 30px !important;
+	padding: 6px 41px 6px 41px !important;
 	background-color: black;
 	color: white !important;
   font-size: 16px !important;
@@ -170,8 +170,7 @@ td a:hover {
 .submit-button {
   display: inline-block;
   text-decoration: none;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 4px 30px 6px 30px !important;
   background-color: black;
   color: white;
   font-size: 16px;
@@ -397,3 +396,7 @@ div#error_explanation {
   margin-bottom: 20px;
   width: 200px;
 }
+.max-width-form {
+  max-width: 256px;
+}
+
