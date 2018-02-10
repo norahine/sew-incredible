@@ -37,6 +37,10 @@ en:
   contact: Contact
   follow_me: Follow me on Instagram
   email_me: Email me
+  name: Your name
+  message: Your message
+  submit: Submit
+  contact_form: Contact Form
 
   fabric_type: Fabric type
   fabric_length: Fabric length
@@ -62,10 +66,13 @@ en:
   activerecord:
     models:
       blueprint: Blueprint
+      user: User
     attributes:
       blueprint:
         title: Title
         fabric_type: Fabric type
+      user:
+        password: Password
 
 # Devise
   password: Password

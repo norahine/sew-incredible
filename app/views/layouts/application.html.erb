@@ -20,11 +20,10 @@
 			<div class="container">
 				<h1>Sew Incredible</h1>
 				<p>by Natalia Barańska</p>
-				<!-- <%= link_to t(:more), main_about_path, id: "learn_more_button" %> -->
 				<% if user_signed_in? %>
-					<%= link_to t(:log_out), destroy_user_session_path, method: :delete, id: "learn_more_button" %>
+					<%= link_to t(:log_out), destroy_user_session_path, method: :delete, class: "login_button" %>
 				<% else %>
-					<%= link_to t(:log_in), new_user_session_path, id: "learn_more_button" %>
+					<%= link_to t(:log_in), new_user_session_path, class: "login_button" %>
 				<% end %>
 			</div>
 		</div>
@@ -32,18 +31,13 @@
 		<div class="nav">
 			<div class="container">
 					<ul>
-					<% if user_signed_in? %>
-						<li><%= link_to t(:all_blueprints), blueprints_path %></li>
-						<li><%= link_to t(:new_blueprint), new_blueprint_path %></li>
-					<% end %>
-
-
-						<li><%= link_to t(:about_nav), main_about_path %></li>
-						<!-- User authenitication -->
 						<% if user_signed_in? %>
-<!-- 							<li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></li> -->
-						<% else %>
-<!-- 							<li><%= link_to t(:log_in), new_user_session_path %></li> -->
+							<li><%= link_to t(:all_blueprints), blueprints_path %></li>
+							<li><%= link_to t(:new_blueprint), new_blueprint_path %></li>
+						<% end %>
+						<li><%= link_to t(:about_nav), main_about_path %></li>
+						<li><%= link_to t(:contact), new_contact_path %></li>
+						<% if !user_signed_in? %>
 							<li><%= link_to t(:sign_up), new_user_registration_path %></li>
 						<% end %>
 					</ul>

@@ -16,6 +16,10 @@ pl:
   contact: Kontakt
   follow_me: Obserwuj mnie
   email_me: Email
+  name: Twoje imię
+  message: Twoja wiadomość
+  submit: Wyślij
+  contact_form: Skontaktuj się
 
   material_type: Rodzaj materiału
   fabric_length: Długość materiału
@@ -31,14 +35,24 @@ pl:
   log_in: Zaloguj
   sign_up: Zarejestruj
 
+  # TODO
+  blueprints:
+    edit:
+      error_message:
+        one: "%{count} error prohibited this blueprint from being saved:"
+        other: "%{count} errors prohibited this blueprint from being saved:"
+
   # http://guides.rubyonrails.org/i18n.html
   activerecord:
     models:
       blueprint: Blueprint
+      user: Użytkownik
     attributes:
       blueprint:
         title: Tytuł
         fabric_type: Rodzaj materiału
+      user:
+        password: Hasło
 
 # Devise
   password: Hasło
@@ -46,4 +60,6 @@ pl:
   remember_me: Pamiętaj mnie
   characters_minimum: znaków minimum
   forgot_password: Zapomniałeś hasło?
+
+
 

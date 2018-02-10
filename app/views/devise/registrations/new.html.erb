@@ -12,7 +12,7 @@
     <div class="field">
       <%= f.label :password, t(:password) %>
       <% if @minimum_password_length %>
-      <span class="secondary-info">(<%= @minimum_password_length %> <%= t(:characters_minimum) %> )</span>
+      <span class="secondary-info">(<%= @minimum_password_length %> <%= t(:characters_minimum) %>)</span>
       <% end %><br />
       <%= f.password_field :password, autocomplete: "off", class: "medium-margin-bottom input-width" %>
     </div>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="actions">
-      <%= f.submit t(:sign_up), class: "submit-button" %>
+      <%= f.submit t(:sign_up), class: "submit-form-button" %>
     </div>
   <% end %>
 

@@ -15,10 +15,9 @@
  *= require_self
  */
 
-
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -63,17 +62,16 @@ a {
   }
 }
 
-#learn_more_button {
+.login_button {
 	text-decoration: none;
 	background: black;
 	color: white;
 	padding: 10px 30px 10px 30px;
 }
 
-#learn_more_button:hover {
+.login_button:hover {
 	background: grey;
 }
-
 
 // Main part
 .container h1 {
@@ -111,17 +109,6 @@ h1.all-instructions {
   }
 }
 
-/* Fak! Jak je zrobić na środku? */
-// .nav ul li {
-// 	color: white;
-// 	display: inline-block;
-// 	height: 80px;
-// 	line-height: 80px;
-// 	list-style: none;
-// 	padding: 0 10px;
-// 	transition: background .5s;
-// }
-
 .nav ul li a {
 	color: white;
 }
@@ -133,16 +120,6 @@ h1.all-instructions {
 .main .container {
 	margin: 80px auto;
 	display: table; height: 200px; position: relative; overflow: hidden;
-}
-
-.main img {
-	/* float: left;
-	margin: 50px 80px 50px 0;
-	width: 50%; /*
-	/* Vertical alignment: http://www.vertical-align.com/ */
-	/* display: table-cell; vertical-align: middle;
-	height: 400px;
-	width: 320px; */
 }
 
 .main .about {
@@ -179,41 +156,52 @@ td a:hover {
 }
 
 /* Any link with a class of "Back"*/
-a.back {
+.back-btn {
 	display: inline-block;
-	text-decoration: none;
-	padding: 5px 42px 5px 42px;
+	text-decoration: none !important;
+	padding: 5px 30px 5px 30px !important;
 	background-color: black;
-	color: white;
-  // margin-left: 2px;
+	color: white !important;
+  font-size: 16px !important;
+  margin: 0;
 }
 
 .submit-button {
   display: inline-block;
   text-decoration: none;
-  padding: 3px 30px 5px 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   background-color: black;
   color: white;
   font-size: 16px;
   border-width: 0;
   margin: 0;
-  // work on the width
+  // TODO: work on the width
   width: 130px;
 }
 
-a.back:hover,
-.submit-button:hover {
-	background: grey;
+.submit-form-button {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-width: 0;
+  margin: 0;
+  width: 206px;
+}
+
+.submit-form-button:hover {
+  background: grey;
   cursor: pointer;
 }
 
-.medium-margin-bottom {
-  margin-bottom: 18px;
-}
-
-label {
-  margin-left: 2px;
-  display: block;
+a.back-btn:hover,
+.submit-button:hover {
+	background: grey;
+  cursor: pointer;
 }
 
 // Footer
@@ -338,11 +326,7 @@ h3 {
   color: red;
 }
 
-// .blueprint-details {
-
-// }
-
-// User authentication forms
+// User authentication forms, new blueprint form
 .form {
   h2 {
     font-size: 28px;
@@ -351,7 +335,6 @@ h3 {
   }
 
   .field input {
-    // margin-bottom: 18px!important;
     margin-left: 0;
   }
 
@@ -361,9 +344,13 @@ h3 {
     font-size: 14px;
   }
 
-  // label.secondary-info {
-  //   margin-left: 0;
-  // }
+  .field_with_errors {
+    display: inline;
+  }
+
+  textarea {
+    margin-left: 0;
+  }
 
   .secondary-info {
     font-size: 12px;

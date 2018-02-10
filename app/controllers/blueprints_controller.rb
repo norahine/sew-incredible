@@ -1,22 +1,29 @@
 class BlueprintsController < ApplicationController
+	before_action :authenticate_user!
+
 	def index
-		@blueprints = Blueprint.all
+		# @blueprints = Blueprint.all
+		@blueprints = current_user.blueprints
 	end
 
 	def show
-		@blueprint = Blueprint.find(params[:id])
+		# @blueprint = Blueprint.find(params[:id])
+		@blueprint = current_user.blueprints.find(params[:id])
 	end
 
 	def new
-		@blueprint = Blueprint.new
+		# @blueprint = Blueprint.new
+		# http://guides.rubyonrails.org/association_basics.html
+		@blueprint = current_user.blueprints.build
 	end
 
 	def edit
-		@blueprint = Blueprint.find(params[:id])
+		# @blueprint = Blueprint.find(params[:id])
+		@blueprint = current_user.blueprints.find(params[:id])
 	end
 
 	def create
-		@blueprint = Blueprint.new(blueprint_params)
+		@blueprint = current_user.blueprints.build(blueprint_params)
 
 		if @blueprint.save
 			redirect_to @blueprint
@@ -26,7 +33,7 @@ class BlueprintsController < ApplicationController
 	end
 
 	def update
-		@blueprint = Blueprint.find(params[:id])
+		@blueprint = current_user.blueprints.find(params[:id])
 
 		if @blueprint.update(blueprint_params)
 			redirect_to @blueprint
@@ -36,7 +43,7 @@ class BlueprintsController < ApplicationController
 	end
 
 	def destroy
-  	@blueprint = Blueprint.find(params[:id])
+  	@blueprint = current_user.blueprints.find(params[:id])
   	@blueprint.destroy
 
   	redirect_to blueprints_path
