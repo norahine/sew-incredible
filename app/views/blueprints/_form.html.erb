@@ -17,27 +17,27 @@
   <%= form_for @blueprint do |f| %>
     <div class="field">
       <%= f.label :title, t(:title) %><br />
-      <%= f.text_field :title, size: 38, class: "medium-margin-bottom" %>
+      <%= f.text_field :title, size: 38, class: "medium-margin-bottom max-width-form" %>
     </div>
 
     <div class="field">
       <%= f.label :fabric_type, t(:fabric_type) %><br />
-      <%= f.text_field :fabric_type, size: 38, class: "medium-margin-bottom" %>
+      <%= f.text_field :fabric_type, size: 38, class: "medium-margin-bottom max-width-form" %>
     </div>
 
     <div class="field">
       <%= f.label :fabric_length, t(:fabric_length) %><br />
-      <%= f.text_field :fabric_length, size: 20, class: "medium-margin-bottom" %>
+      <%= f.text_field :fabric_length, size: 20, class: "medium-margin-bottom max-width-form" %>
     </div>
 
     <div class="field">
       <%= f.label :instructions, t(:instructions) %><br />
-      <%= f.text_area :instructions, size: "40x10", class: "medium-margin-bottom" %>
+      <%= f.text_area :instructions, size: "40x10", class: "medium-margin-bottom max-width-form" %>
     </div>
 
     <div class="field">
       <%= f.label :additional_comments, t(:comment) %><br />
-      <%= f.text_area :additional_comments, size: "40x5", class: "medium-margin-bottom" %>
+      <%= f.text_area :additional_comments, size: "40x5", class: "medium-margin-bottom max-width-form" %>
     </div>
 
     <%= link_to t(:cancel), blueprints_path, class: "back-btn" %>
