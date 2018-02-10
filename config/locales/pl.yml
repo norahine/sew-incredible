@@ -11,6 +11,7 @@ pl:
   about: O aplikacji
   about_nav: O aplikacji
   new_blueprint: Nowa instrukcja
+  new_blueprint_2: nową instrukcję
   all_blueprints: Wszystkie instrukcje
 
   contact: Kontakt
@@ -21,10 +22,12 @@ pl:
   submit: Wyślij
   contact_form: Skontaktuj się
 
-  material_type: Rodzaj materiału
+  fabric_type: Rodzaj materiału
   fabric_length: Długość materiału
   instructions: Instrukcje
   comment: Dodatkowy komentarz
+  no_intructions: Twoja lista wykrojów jest pusta. Dodaj
+  to_list: do swojej listy
 
   cancel: Anuluj
   add: Dodaj
@@ -39,8 +42,8 @@ pl:
   blueprints:
     edit:
       error_message:
-        one: "%{count} error prohibited this blueprint from being saved:"
-        other: "%{count} errors prohibited this blueprint from being saved:"
+        one: "%{count} błąd uniemożliwił zapisanie:"
+        other: "%{count} błędy uniemożliwiły zapisanie:"
 
   # http://guides.rubyonrails.org/i18n.html
   activerecord:
@@ -53,6 +56,7 @@ pl:
         fabric_type: Rodzaj materiału
       user:
         password: Hasło
+        password_confirmation: Potwierdź hasło
 
 # Devise
   password: Hasło

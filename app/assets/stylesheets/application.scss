@@ -80,7 +80,8 @@ a {
   margin-bottom: 30px;
 }
 
-h1.all-instructions {
+h1.all-instructions,
+h3.all-instructions {
   margin-left: 14px;
 }
 
@@ -371,8 +372,16 @@ strong {
   font-weight: bold;
 }
 
+.small-margin-bottom {
+  margin-bottom: 10px;
+}
+
 .medium-margin-bottom {
   margin-bottom: 18px;
+}
+
+.small-margin-top {
+  margin-top: 10px;
 }
 
 .input-width {
@@ -381,4 +390,10 @@ strong {
 
 table.about-table {
   width: 520px;
+}
+
+// Error messages
+div#error_explanation {
+  margin-bottom: 20px;
+  width: 200px;
 }

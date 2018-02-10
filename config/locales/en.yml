@@ -32,6 +32,7 @@ en:
   about_nav: About
   about: About App
   new_blueprint: New Blueprint
+  new_blueprint_2: new blueprint
   all_blueprints: All Blueprints
 
   contact: Contact
@@ -46,6 +47,8 @@ en:
   fabric_length: Fabric length
   instructions: Instructions
   comment: Comment
+  no_intructions: Your blueprint list is currently empty. Add a
+  to_list: to your list
 
   cancel: Cancel
   add: Add
@@ -73,6 +76,7 @@ en:
         fabric_type: Fabric type
       user:
         password: Password
+        password_confirmation: Password confirmation
 
 # Devise
   password: Password

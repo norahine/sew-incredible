@@ -1,15 +1,15 @@
 <div class="blueprint-details">
-  <p>
+  <h1>
     <strong><%= t(:title) %>:</strong>
     <%= @blueprint.title %>
-  </p>
+  </h1>
 
-  <p>
+  <p class="small-margin-bottom">
     <strong><%= t(:fabric_type) %>:</strong>
     <%= @blueprint.fabric_type %>
   </p>
 
-  <p>
+  <p class="small-margin-bottom">
     <strong><%= t(:fabric_length) %>:</strong>
     <% if @blueprint.fabric_length.present? %>
       <%= @blueprint.fabric_length %>
@@ -18,7 +18,7 @@
     <% end %>
   </p>
 
-  <p>
+  <p class="small-margin-bottom">
     <strong><%= t(:instructions) %>:</strong>
     <% if @blueprint.instructions.present? %>
       <%= simple_format @blueprint.instructions %>
@@ -27,7 +27,7 @@
     <% end %>
   </p>
 
-  <p>
+  <p class="small-margin-bottom small-margin-top">
     <strong><%= t(:comment) %>:</strong>
     <% if @blueprint.additional_comments.present? %>
       <%= simple_format @blueprint.additional_comments %>
@@ -36,5 +36,5 @@
     <% end %>
   </p>
 
-  <%= link_to t(:cancel), blueprints_path, class: "back-btn" %>
+  <%= link_to t(:cancel), blueprints_path, class: "back-btn small-margin-top" %>
 </div>
