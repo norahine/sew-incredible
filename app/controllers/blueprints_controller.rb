@@ -51,8 +51,7 @@ class BlueprintsController < ApplicationController
 
 
 	private
-
-	def blueprint_params
-		params.require(:blueprint).permit(:title, :fabric_type, :fabric_length, :instructions, :additional_comments)
-	end
+		def blueprint_params
+			params.require(:blueprint).permit(:title, :fabric_type, :fabric_length, :instructions, :additional_comments)
+		end
 end
