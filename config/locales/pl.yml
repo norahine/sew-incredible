@@ -13,6 +13,7 @@ pl:
   new_blueprint: Nowa instrukcja
   new_blueprint_2: nową instrukcję
   all_blueprints: Wszystkie instrukcje
+  blueprint_created: Twoja instrukcja została dodana
 
   contact: Kontakt
   follow_me: Obserwuj mnie
@@ -37,6 +38,9 @@ pl:
   log_out: Wyloguj
   log_in: Zaloguj
   sign_up: Zarejestruj
+
+  message_sent_success: Wiadomość została wysłana.
+  message_sent_error: Wystąpił błąd.
 
   # TODO
   blueprints:

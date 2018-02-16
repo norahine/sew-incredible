@@ -46,6 +46,11 @@
 
 		<div class="main">
 			<div class="container">
+				<% [:success, :error, :alert, :notice].each do |type| %>
+					<% if flash[type].present? %>
+						<div class="flash-message medium-margin-bottom"><%= flash[type] %></div>
+					<% end %>
+				<% end %>
 				<%= yield %>
 		    </div>
 		</div>

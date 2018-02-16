@@ -34,6 +34,7 @@ en:
   new_blueprint: New Blueprint
   new_blueprint_2: new blueprint
   all_blueprints: All Blueprints
+  blueprint_created: Your instruction was added
 
   contact: Contact
   follow_me: Follow me on Instagram
@@ -58,6 +59,9 @@ en:
   log_out: Log Out
   log_in: Log In
   sign_up: Sign Up
+
+  message_sent_success: Message sent.
+  message_sent_error: Error occured.
 
   blueprints:
     edit:

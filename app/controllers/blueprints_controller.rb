@@ -26,7 +26,7 @@ class BlueprintsController < ApplicationController
 		@blueprint = current_user.blueprints.build(blueprint_params)
 
 		if @blueprint.save
-			redirect_to @blueprint
+			redirect_to @blueprint, flash: { success: t(:blueprint_created) }
 		else
 			render "new"
 		end
