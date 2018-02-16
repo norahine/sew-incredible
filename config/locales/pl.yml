@@ -68,6 +68,4 @@ pl:
   remember_me: Pamiętaj mnie
   characters_minimum: znaków minimum
   forgot_password: Zapomniałeś hasło?
-
-
-
+  provide_email: "Podaj swój e-mail, jeśli jest w systemie, wyślemy Ci link do zmiany hasła."

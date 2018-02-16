@@ -87,4 +87,5 @@ en:
   password_confirmation: Password confirmation
   remember_me: Remember me
   characters_minimum: characters minimum
-  forgot_password : Forgot your password?
+  forgot_password : Forgotten your password?
+  provide_email: "Enter the email address linked to your account. If you’re in our system, we’ll send you a reset link."
