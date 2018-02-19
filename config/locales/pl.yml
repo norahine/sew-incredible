@@ -14,6 +14,7 @@ pl:
   new_blueprint_2: nową instrukcję
   all_blueprints: Wszystkie instrukcje
   blueprint_created: Twoja instrukcja została dodana
+  error_saving_blueprint: "Wystąpił problem z zapisaniem instrukcji. Upewnij się, że 'Tytuł' oraz 'Rodzaj materiału' są uzupełnione."
 
   contact: Kontakt
   name: Twoje imię

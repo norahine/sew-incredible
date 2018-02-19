@@ -157,28 +157,15 @@ td a:hover {
 }
 
 /* Any link with a class of "Back"*/
-.back-btn {
-	display: inline-block;
-	text-decoration: none !important;
-	padding: 6px 41px 6px 41px !important;
-	background-color: black;
-	color: white !important;
-  font-size: 16px !important;
-  margin: 0;
-}
-
-.submit-button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 4px 30px 6px 30px !important;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border-width: 0;
-  margin: 0;
-  // TODO: work on the width
-  width: 130px;
-}
+// .back-btn {
+// 	display: inline-block;
+// 	text-decoration: none !important;
+// 	padding: 6px 41px 6px 41px !important;
+// 	background-color: black;
+// 	color: white !important;
+//   font-size: 16px !important;
+//   margin: 0;
+// }
 
 .submit-form-button {
   display: inline-block;
@@ -195,12 +182,6 @@ td a:hover {
 
 .submit-form-button:hover {
   background: grey;
-  cursor: pointer;
-}
-
-a.back-btn:hover,
-.submit-button:hover {
-	background: grey;
   cursor: pointer;
 }
 
@@ -391,9 +372,6 @@ div#error_explanation {
   h2 {
     margin-bottom: 5px;
   }
-}
-.max-width-form {
-  max-width: 256px;
 }
 
 .alert {
