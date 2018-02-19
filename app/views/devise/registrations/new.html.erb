@@ -2,7 +2,10 @@
   <h2><%= t(:sign_up) %></h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
+
+    <% if resource.errors.any? %>
+      <p class="input-width alert error"><%= t(:user_registration_errors) %></p>
+    <% end %>
 
     <div class="field">
       <%= f.label :email %><br />

@@ -58,8 +58,9 @@ en:
   log_out: Log Out
   log_in: Log In
   sign_up: Sign Up
+  user_registration_errors: "There was an issue registering the user. Please check that all fields below have been filled out."
 
-  message_sent_success: Message sent.
+  message_sent_success: "Your message has been sent. I'll get back to you shortly."
   message_sent_error: Error occured.
 
   blueprints:
@@ -93,3 +94,4 @@ en:
   characters_minimum: characters minimum
   forgot_password : Forgotten your password?
   provide_email: "Enter the email address linked to your account. If you’re in our system, we’ll send you a reset link."
+  error_recovering_password: "Make sure that you entered email used with registration."

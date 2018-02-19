@@ -402,9 +402,10 @@ div#error_explanation {
   border-radius: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  // padding-right:
   padding-left: 4px;
   margin-bottom: 24px;
+  // TODO:
+  max-width: 200px;
 }
 
 .alert.error {
@@ -417,6 +418,10 @@ div#error_explanation {
 
 .alert.alert.message {
   background-color: orange;
+}
+
+.alert.notice {
+  background-color: grey;
 }
 
 .field_with_errors input,

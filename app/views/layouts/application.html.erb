@@ -13,6 +13,7 @@
 			<ul class="language-switch">
 				<% I18n.available_locales.each do |locale| %>
 					<li class="language<%= I18n.locale == locale ? ' active' : '' %>">
+						<!-- TODO: -->
 						<%= link_to locale.upcase, { locale: locale } %>
 					</li>
 				<% end %>
@@ -44,6 +45,7 @@
 		  	</div>
 		</div>
 
+		<!-- Flash messages -->
 		<div class="main">
 			<div class="container">
 				<% [:success, :error, :alert, :notice].each do |type| %>
@@ -55,7 +57,7 @@
 						<% elsif flash[type] == flash[:alert] %>
 							<div class="alert alert message"><%= flash[type] %></div>
 						<% else %>
-							<div class="medium-margin-bottom"><%= flash[type] %></div>
+							<div class="alert notice"><%= flash[type] %></div>
 						<% end %>
 					<% end %>
 				<% end %>

@@ -37,8 +37,9 @@ pl:
   log_out: Wyloguj
   log_in: Zaloguj
   sign_up: Zarejestruj
+  user_registration_errors: "Wystąpił problem z rejestracją użytkownika. Upewnij się, że wszystkie poniższe pola są wypełnione."
 
-  message_sent_success: Wiadomość została wysłana.
+  message_sent_success: Twoja wiadomość została wysłana.
   message_sent_error: Wystąpił błąd.
 
   # TODO
@@ -73,3 +74,4 @@ pl:
   characters_minimum: znaków minimum
   forgot_password: Zapomniałeś hasło?
   provide_email: "Podaj swój e-mail, jeśli jest w systemie, wyślemy Ci link do zmiany hasła."
+  error_recovering_password: "Upewnij się, że wprowadziłeś email podany przy rejestracji."
