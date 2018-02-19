@@ -16,12 +16,11 @@ pl:
   blueprint_created: Twoja instrukcja została dodana
 
   contact: Kontakt
-  follow_me: Obserwuj mnie
-  email_me: Email
   name: Twoje imię
   message: Twoja wiadomość
   submit: Wyślij
   contact_form: Skontaktuj się
+  error_sending_message: "Wystąpił problem z wysłaniem wiadomości – upewnij się, że wszystkie poniższe pola są wypełnione."
 
   fabric_type: Rodzaj materiału
   fabric_length: Długość materiału
@@ -54,6 +53,7 @@ pl:
     models:
       blueprint: Blueprint
       user: Użytkownik
+      contact: Contact
     attributes:
       blueprint:
         title: Tytuł
@@ -61,8 +61,12 @@ pl:
       user:
         password: Hasło
         password_confirmation: Potwierdź hasło
+      contact:
+        name: Imię
+        email: Email
+        message: Wiadomość
 
-# Devise
+  # Devise
   password: Hasło
   password_confirmation: Potwierdź hasło
   remember_me: Pamiętaj mnie

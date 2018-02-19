@@ -1,15 +1,15 @@
-  <% if @blueprint.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= t "blueprints.edit.error_message", count: @blueprint.errors.count %>
-      </h2>
-      <ul>
-        <% @blueprint.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<% if @blueprint.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= t "blueprints.edit.error_message", count: @blueprint.errors.count %>
+    </h2>
+    <ul>
+      <% @blueprint.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 
 <br />
 

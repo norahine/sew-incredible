@@ -37,12 +37,11 @@ en:
   blueprint_created: Your instruction was added
 
   contact: Contact
-  follow_me: Follow me on Instagram
-  email_me: Email me
   name: Your name
   message: Your message
   submit: Submit
   contact_form: Contact Form
+  error_sending_message: There was an issue sending your message – please check that all fields below have been filled out.
 
   fabric_type: Fabric type
   fabric_length: Fabric length
@@ -74,6 +73,7 @@ en:
     models:
       blueprint: Blueprint
       user: User
+      contact: Kontakt
     attributes:
       blueprint:
         title: Title
@@ -81,6 +81,10 @@ en:
       user:
         password: Password
         password_confirmation: Password confirmation
+      contact:
+        name: Name
+        email: Email
+        message: Message
 
 # Devise
   password: Password

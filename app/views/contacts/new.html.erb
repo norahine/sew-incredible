@@ -1,8 +1,10 @@
 <h1><%= t(:contact_form) %></h1>
 
-<!-- TODO: -->
-
 <div class="form">
+  <% if @contact.errors.any? %>
+    <p class="input-width alert error"><%= t(:error_sending_message) %></p>
+  <% end %>
+
   <%= form_for @contact do |f| %>
     <div class="field">
       <%= f.label :name, t(:name) %><br />

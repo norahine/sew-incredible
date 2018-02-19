@@ -75,7 +75,7 @@ a {
 
 // Main part
 .container h1 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -259,23 +259,19 @@ a.back-btn:hover,
   }
 }
 
-// About
+// About section
 #about {
 	text-align: center;
-}
-
-.email-btn,
-.insta-btn {
-	margin-left: 20px;
 }
 
 .about-table {
 	margin: 0 auto;
   margin-bottom: 30px;
+  width: 400px;
 }
 
 h3 {
-  width: 520px;
+  width: 400px;
   padding-bottom: 20px;
   line-height: 1.5;
   text-align: justify;
@@ -319,11 +315,6 @@ h3 {
 .language-switch li a:hover,
 .language-switch li.active a {
 	font-weight: bold;
-}
-
-#error_explanation > * {
-  font-size: 12px;
-  color: red;
 }
 
 // User authentication forms, new blueprint form
@@ -387,15 +378,48 @@ strong {
   width: 200px;
 }
 
-table.about-table {
-  width: 520px;
+// Error messages
+#error_explanation > * {
+  font-size: 14px;
+  color: red;
 }
 
-// Error messages
 div#error_explanation {
   margin-bottom: 20px;
   width: 200px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
 }
 .max-width-form {
   max-width: 256px;
+}
+
+.alert {
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  // padding-right:
+  padding-left: 4px;
+  margin-bottom: 24px;
+}
+
+.alert.error {
+  background-color: red;
+}
+
+.alert.success {
+  background-color: #9ADB6B
+}
+
+.alert.alert.message {
+  background-color: orange;
+}
+
+.field_with_errors input,
+.field_with_errors textarea {
+  border: 1px solid red;
 }
