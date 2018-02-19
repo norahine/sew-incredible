@@ -35,7 +35,8 @@ en:
   new_blueprint_2: new blueprint
   all_blueprints: All Blueprints
   blueprint_created: Your instruction was added
-  error_saving_blueprint: "There was an issue creating the instruction. Please check that 'Title' and 'Fabric type' have been filled out."
+  error_saving_blueprint: "There was an issue creating the instruction. Please check that 'Title'* and 'Fabric type' have been filled out."
+  minimum_3_characters: At least 3 characters.
 
   contact: Contact
   name: Your name

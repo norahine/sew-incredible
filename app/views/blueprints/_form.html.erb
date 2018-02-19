@@ -1,6 +1,10 @@
 <div class="form">
   <% if @blueprint.errors.any? %>
-    <p class="input-width alert error"><%= t(:error_saving_blueprint) %></p>
+    <p class="input-width alert error"><%= t(:error_saving_blueprint) %>
+    <br />
+    <br />
+    *<%= t(:minimum_3_characters)%>
+    </p>
   <% end %>
 
 
