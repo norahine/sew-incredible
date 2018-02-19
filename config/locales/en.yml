@@ -94,4 +94,4 @@ en:
   characters_minimum: characters minimum
   forgot_password : Forgotten your password?
   provide_email: "Enter the email address linked to your account. If you’re in our system, we’ll send you a reset link."
-  error_recovering_password: "Make sure that you entered email used with registration."
+  error_recovering_password: "Make sure that you entered the email you used during registration."
