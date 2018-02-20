@@ -80,11 +80,6 @@ a {
   margin-bottom: 30px;
 }
 
-// h1.all-instructions,
-// h3.all-instructions {
-//   margin-left: 14px;
-// }
-
 /* Pasek: Wszystkie intrukcje etc. */
 .nav {
 	background: black;
@@ -151,21 +146,14 @@ a {
 	text-decoration: none;
 }
 
+a.action.submit-form-button {
+  text-align: center;
+}
+
 /*mouse over*/
 td a:hover {
 	background: grey;
 }
-
-/* Any link with a class of "Back"*/
-// .back-btn {
-// 	display: inline-block;
-// 	text-decoration: none !important;
-// 	padding: 6px 41px 6px 41px !important;
-// 	background-color: black;
-// 	color: white !important;
-//   font-size: 16px !important;
-//   margin: 0;
-// }
 
 .submit-form-button {
   display: inline-block;

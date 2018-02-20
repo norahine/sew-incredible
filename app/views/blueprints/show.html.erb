@@ -1,4 +1,4 @@
-<div class="blueprint-details">
+<div class="input-width">
   <h1>
     <strong><%= t(:title) %>:</strong>
     <%= @blueprint.title %>
@@ -35,6 +35,9 @@
       <%= t(:not_provided) %>
     <% end %>
   </p>
-  <!-- TODO -->
-  <!--<%= link_to t(:cancel), blueprints_path, class: "back-btn small-margin-top" %>-->
+
+  <%= link_to t(:edit), edit_blueprint_path(@blueprint), class: "action submit-form-button" %>
+  <%= link_to t(:delete), blueprint_path(@blueprint),
+                method: :delete,
+                data: { confirm: t(:sure_delete) }, class: "action submit-form-button small-margin-top" %>
 </div>
