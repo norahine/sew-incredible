@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
     @email = contact.email
     @message = contact.message
 
-    mail(reply_to: email, subject: "Contact Form Message from Sew Incredible")
+    mail(reply_to: @email, subject: "Contact Form Message from Sew Incredible")
   end
 end
