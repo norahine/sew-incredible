@@ -1,10 +1,10 @@
-<h1 class="all-instructions"><%=t(:all_blueprints)%></h1>
+<h1 class="all-instructions"><%= t(:all_blueprints) %></h1>
 
 <% if current_user.blueprints.present? %>
   <table>
     <thead>
-      <th><%=t(:title)%></th>
-      <th><%=t(:fabric)%></th>
+      <th><%= t(:title) %></th>
+      <th><%= t(:fabric) %></th>
       <th colspan="3"></th>
     </thead>
 
@@ -23,6 +23,6 @@
     </tbody>
   </table>
 <% else %>
-  <h3 class="all-instructions"><%= t(:no_intructions) %> <%= link_to t(:new_blueprint_2), new_blueprint_path %> <%= t(:to_list) %>.</h3>
+  <h3 class="all-instructions"><%= t(:no_intructions_html, new_blueprint_link: link_to(t('.new_blueprint_link'), new_blueprint_path)) %></h3>
 <% end %>
 

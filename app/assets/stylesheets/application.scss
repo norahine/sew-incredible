@@ -155,24 +155,6 @@ td a:hover {
 	background: grey;
 }
 
-.submit-form-button {
-  display: inline-block;
-  text-decoration: none;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border-width: 0;
-  margin: 0;
-  width: 206px;
-}
-
-.submit-form-button:hover {
-  background: grey;
-  cursor: pointer;
-}
-
 // Footer
 .footer {
 	background: black;
@@ -286,46 +268,6 @@ h3 {
 	font-weight: bold;
 }
 
-// User authentication forms, new blueprint form
-.form {
-  h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-
-  .field input {
-    margin-left: 0;
-  }
-
-  label {
-    display: inline-block;
-    margin-left: 0;
-    font-size: 14px;
-  }
-
-  .field_with_errors {
-    display: inline;
-  }
-
-  textarea {
-    margin-left: 0;
-  }
-
-  .secondary-info {
-    font-size: 12px;
-  }
-
-  a {
-    color: grey;
-    font-size: 12px;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
 // Custom classes
 strong {
   font-weight: bold;
@@ -362,7 +304,7 @@ div#error_explanation {
   }
 }
 
-.alert {
+.flash-message {
   color: white;
   font-size: 14px;
   border-radius: 4px;
@@ -374,23 +316,18 @@ div#error_explanation {
   max-width: 200px;
 }
 
-.alert.error {
+.flash-message.error {
   background-color: red;
 }
 
-.alert.success {
+.flash-message.success {
   background-color: #8FD75B;
 }
 
-.alert.alert.message {
+.flash-message.alert {
   background-color: orange;
 }
 
-.alert.notice {
+.flash-message.notice {
   background-color: grey;
-}
-
-.field_with_errors input,
-.field_with_errors textarea {
-  border: 1px solid red;
 }

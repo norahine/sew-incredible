@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180211104956) do
+ActiveRecord::Schema.define(version: 20180221081653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "blueprints", force: :cascade do |t|
-    t.string   "title"
-    t.string   "fabric_type"
+    t.string   "title",               null: false
+    t.string   "fabric_type",         null: false
     t.decimal  "fabric_length"
     t.text     "instructions"
     t.text     "additional_comments"
@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 20180211104956) do
   end
 
   create_table "contacts", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "message"
+    t.string   "name",       null: false
+    t.string   "email",      null: false
+    t.text     "message",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

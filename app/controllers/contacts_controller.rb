@@ -7,10 +7,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      name = params[:contact][:name]
-      email = params[:contact][:email]
-      message = params[:contact][:message]
-      ContactMailer.contact_email(name, email, message).deliver
+      # TODO move to background queue (delayed job, resque, sidekiq?)
+      ContactMailer.contact_email(@contact).deliver
 
       flash[:success] = t(:message_sent_success)
       redirect_to new_contact_path

@@ -22,7 +22,6 @@
 en:
   show: Show
   edit: Edit
-  edit_2: Edit
   delete: Delete
   title: Title
   fabric: Fabric Type
@@ -32,7 +31,6 @@ en:
   about_nav: About
   about: About App
   new_blueprint: New Blueprint
-  new_blueprint_2: new blueprint
   all_blueprints: All Blueprints
   blueprint_created: Your instruction was added
   error_saving_blueprint: "There was an issue creating the instruction. Please check that 'Title'* and 'Fabric type' have been filled out."
@@ -49,8 +47,8 @@ en:
   fabric_length: Fabric length
   instructions: Instructions
   comment: Comment
-  no_intructions: Your blueprint list is currently empty. Add a
-  to_list: to your list
+  # Add '_html' so rails doesn't HTML-escape our link
+  no_intructions_html: "Your blueprint list is currently empty. Add a %{new_blueprint_link} to your list."
 
   cancel: Cancel
   add: Add
@@ -66,7 +64,10 @@ en:
   message_sent_error: Error occured.
 
   blueprints:
+    index:
+      new_blueprint_link: new blueprint
     edit:
+      title: "Editing \"%{blueprint_title}\""
       error_message:
         one: "%{count} error prohibited this blueprint from being saved:"
         other: "%{count} errors prohibited this blueprint from being saved:"

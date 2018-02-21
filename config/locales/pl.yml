@@ -1,7 +1,6 @@
 pl:
   show: Pokaż
   edit: Edytuj
-  edit_2: Edytuję
   delete: Usuń
   title: Tytuł
   fabric: Rodzaj materiału
@@ -11,7 +10,6 @@ pl:
   about: O aplikacji
   about_nav: O aplikacji
   new_blueprint: Nowa instrukcja
-  new_blueprint_2: nową instrukcję
   all_blueprints: Wszystkie instrukcje
   blueprint_created: Twoja instrukcja została dodana
   error_saving_blueprint: "Wystąpił problem z zapisaniem instrukcji. Upewnij się, że 'Tytuł'* oraz 'Rodzaj materiału' są uzupełnione."
@@ -28,8 +26,7 @@ pl:
   fabric_length: Długość materiału
   instructions: Instrukcje
   comment: Dodatkowy komentarz
-  no_intructions: Twoja lista wykrojów jest pusta. Dodaj
-  to_list: do swojej listy
+  no_intructions_html: "Twoja lista wykrojów jest pusta. Dodaj %{new_blueprint_link} do swojej listy."
 
   cancel: Anuluj
   add: Dodaj
@@ -44,9 +41,11 @@ pl:
   message_sent_success: Twoja wiadomość została wysłana.
   message_sent_error: Wystąpił błąd.
 
-  # TODO
   blueprints:
+    index:
+      new_blueprint_link: nową instrukcję
     edit:
+      title: "Edytuję \"%{blueprint_title}\""
       error_message:
         one: "%{count} błąd uniemożliwił zapisanie:"
         other: "%{count} błędy uniemożliwiły zapisanie:"

@@ -2,7 +2,7 @@
 
 <div class="form">
   <% if @contact.errors.any? %>
-    <p class="input-width alert error"><%= t(:error_sending_message) %></p>
+    <p class="input-width flash-message error"><%= t(:error_sending_message) %></p>
   <% end %>
 
   <%= form_for @contact do |f| %>

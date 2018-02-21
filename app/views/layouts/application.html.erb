@@ -6,15 +6,16 @@
 		<%= csrf_meta_tags %>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	</head>
 
-	<body>
+	<body class="controller_<%= controller_name %> action_<%= action_name %>">
 		<div class="header">
 			<ul class="language-switch">
 				<% I18n.available_locales.each do |locale| %>
 					<li class="language<%= I18n.locale == locale ? ' active' : '' %>">
-						<!-- TODO: -->
-						<%= link_to locale.upcase, { locale: locale } %>
+						<%#= link_to locale.upcase, { locale: locale } %>
+						<%= link_to locale.upcase, root_path(locale: locale) %>
 					</li>
 				<% end %>
 			</ul>
@@ -48,17 +49,10 @@
 		<!-- Flash messages -->
 		<div class="main">
 			<div class="container">
+
 				<% [:success, :error, :alert, :notice].each do |type| %>
 					<% if flash[type].present? %>
-						<% if flash[type] == flash[:success] %>
-							<div class="alert success"><%= flash[type] %></div>
-						<% elsif flash[type] == flash[:error] %>
-							<div class="alert error"><%= flash[type] %></div>
-						<% elsif flash[type] == flash[:alert] %>
-							<div class="alert alert message"><%= flash[type] %></div>
-						<% else %>
-							<div class="alert notice"><%= flash[type] %></div>
-						<% end %>
+						<div class="flash-message <%= type %>"><%= flash[type] %></div>
 					<% end %>
 				<% end %>
 				<%= yield %>
@@ -69,7 +63,7 @@
 			<table>
 				<tr>
 					<td id="copyright">
-						<p>&copy; Sew Incredible, 2017</p>
+						<p>&copy; Natalia Barańska, 2016-<%= Time.current.year %></p>
 					</td>
 					<td id="website">
 						<a href="#">SewIncredible.com</a>

@@ -1,0 +1,61 @@
+.submit-form-button {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-width: 0;
+  margin: 0;
+  width: 206px;
+
+  &:hover {
+    background: grey;
+    cursor: pointer;
+  }
+}
+
+// User authentication forms, new blueprint form
+.form {
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .field input {
+    margin-left: 0;
+  }
+
+  label {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .field_with_errors {
+    display: inline;
+
+    input, textarea {
+      border: 1px solid red;
+    }
+  }
+
+  textarea {
+    margin-left: 0;
+  }
+
+  .secondary-info {
+    font-size: 12px;
+  }
+
+  a {
+    color: grey;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
