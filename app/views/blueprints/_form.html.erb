@@ -1,22 +1,11 @@
 <div class="form">
   <% if @blueprint.errors.any? %>
-    <p class="input-width flash-message error">
-      <%# TODO too hard-coded – see how people handle errors in forms %>
-      <%= t(:error_saving_blueprint) %>
-      <br />
-      <br />
-      * <%= t(:minimum_3_characters)%>
-    </p>
     <div class="input-width flash-message error">
-      These problems:
       <ul>
         <% @blueprint.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+          <li><%= msg %>.</li>
         <% end %>
       </ul>
-    </div>
-    <div class="input-width flash-message error">
-      <%= @blueprint.errors.full_messages.to_sentence %>
     </div>
   <% end %>
 

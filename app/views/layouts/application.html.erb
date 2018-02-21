@@ -15,7 +15,11 @@
 				<% I18n.available_locales.each do |locale| %>
 					<li class="language<%= I18n.locale == locale ? ' active' : '' %>">
 						<%#= link_to locale.upcase, { locale: locale } %>
-						<%= link_to locale.upcase, root_path(locale: locale) %>
+						<% if user_signed_in? %>
+							<%= link_to locale.upcase, root_path(locale: locale) %>
+						<% else %>
+							<%= link_to locale.upcase, main_about_path(locale: locale) %>
+						<% end %>
 					</li>
 				<% end %>
 			</ul>
@@ -46,7 +50,6 @@
 		  	</div>
 		</div>
 
-		<!-- Flash messages -->
 		<div class="main">
 			<div class="container">
 

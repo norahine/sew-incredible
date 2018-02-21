@@ -33,8 +33,6 @@ en:
   new_blueprint: New Blueprint
   all_blueprints: All Blueprints
   blueprint_created: Your instruction was added
-  error_saving_blueprint: "There was an issue creating the instruction. Please check that 'Title'* and 'Fabric type' have been filled out."
-  minimum_3_characters: At least 3 characters.
 
   contact: Contact
   name: Your name
@@ -47,7 +45,7 @@ en:
   fabric_length: Fabric length
   instructions: Instructions
   comment: Comment
-  # Add '_html' so rails doesn't HTML-escape our link
+  # Added '_html' so rails doesn't HTML-escape our link
   no_intructions_html: "Your blueprint list is currently empty. Add a %{new_blueprint_link} to your list."
 
   cancel: Cancel

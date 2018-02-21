@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-	font-family: Helvetica;
+	font-family: Helvetica,sans-serif;
 }
 
 a {
@@ -32,6 +32,12 @@ a {
 	margin: 0 auto;
 	max-width: 940px;
 	padding: 0 10px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
 }
 
 // Header
@@ -42,23 +48,23 @@ a {
   background-position: 50% 61%;
   background-size: cover;
   height: 460px;
-}
 
-.header .container {
-	position: relative;
-	top: 180px;
-	text-align: center;
+  .container {
+    position: relative;
+    top: 180px;
+    text-align: center;
 
-  h1 {
-    font-size: 60px;
-  }
+    h1 {
+      font-size: 60px;
+    }
 
-  p {
-    font-weight: 500;
-    letter-spacing: 8px;
-    margin-bottom: 40px;
-    margin-top: 0;
-    text-transform: uppercase;
+    p {
+      font-weight: 500;
+      letter-spacing: 8px;
+      margin-bottom: 40px;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -67,55 +73,50 @@ a {
 	background: black;
 	color: white;
 	padding: 10px 30px 10px 30px;
+
+  &:hover {
+    background: grey;
+  }
 }
 
-.login_button:hover {
-	background: grey;
-}
-
-// Main part
-.container h1 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-/* Pasek: Wszystkie intrukcje etc. */
 .nav {
 	background: black;
 	height: 80px;
 	width: 100%;
-}
 
-.nav ul {
-	height: 80px;
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	display: inline-block;
+  ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
 
-  li {
-    color: white;
-    display: inline-block;
-    height: 80px;
-    line-height: 80px;
-    list-style: none;
-    padding: 0 10px;
-    transition: background .5s;
+    li {
+      color: white;
+      display: inline-block;
+      height: 80px;
+      line-height: 80px;
+      list-style: none;
+      padding: 0 10px;
+      transition: background .5s;
+
+      a {
+        color: white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
-}
-
-.nav ul li a {
-	color: white;
-}
-
-.nav ul li a:hover {
-	text-decoration: underline;
 }
 
 .main .container {
 	margin: 80px auto;
-	display: table; height: 200px; position: relative; overflow: hidden;
+	display: table;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .main .about {
@@ -138,21 +139,19 @@ a {
   text-align: left;
 }
 
-/* Pokaż, edutuj, usuń – guziki */
 .main td a {
 	background: black;
 	color: white;
 	padding: 5px 30px 5px 30px;
 	text-decoration: none;
+
+  &:hover {
+    background: grey;
+  }
 }
 
 a.action.submit-form-button {
   text-align: center;
-}
-
-/*mouse over*/
-td a:hover {
-	background: grey;
 }
 
 // Footer
@@ -203,10 +202,10 @@ td a:hover {
     margin-right: 25px;
     position: relative;
     top: 20px;
-  }
 
-  a:hover {
-    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
@@ -229,10 +228,10 @@ h3 {
 
   a {
     color: grey;
-  }
 
-  a:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -261,9 +260,13 @@ h3 {
 
 .language-switch li a {
 	color: black;
+
+  &:hover,
+  .active a {
+    font-weight: bold;
+  }
 }
 
-.language-switch li a:hover,
 .language-switch li.active a {
 	font-weight: bold;
 }
@@ -308,12 +311,9 @@ div#error_explanation {
   color: white;
   font-size: 14px;
   border-radius: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
+  padding: 4px;
   margin-bottom: 24px;
-  // TODO:
-  max-width: 200px;
+  max-width: 196px;
 }
 
 .flash-message.error {
