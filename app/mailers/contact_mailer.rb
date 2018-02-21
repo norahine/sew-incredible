@@ -1,4 +1,4 @@
-class ContactMailer < ActionMailer::Base
+class ContactMailer < ApplicationMailer
   default to: "Sew Incredible <baranska.n@gmail.com>"
 
   def contact_email(contact)
