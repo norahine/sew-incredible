@@ -1,8 +1,5 @@
 <div class="input-width">
-  <h1>
-    <strong><%= t(:title) %>:</strong>
-    <%= @blueprint.title %>
-  </h1>
+  <h1><%= @blueprint.title %></h1>
 
   <p class="small-margin-bottom">
     <strong><%= t(:fabric_type) %>:</strong>
@@ -36,7 +33,7 @@
     <% end %>
   </p>
 
-  <%= link_to t(:edit), edit_blueprint_path(@blueprint), class: "action submit-form-button" %>
+  <%= link_to t(:edit), edit_blueprint_path(@blueprint), class: "action submit-form-button small-margin-top" %>
   <%= link_to t(:delete), blueprint_path(@blueprint),
                 method: :delete,
                 data: { confirm: t(:sure_delete) }, class: "action submit-form-button small-margin-top" %>

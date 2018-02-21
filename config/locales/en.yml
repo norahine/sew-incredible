@@ -70,7 +70,6 @@ en:
         one: "%{count} error prohibited this blueprint from being saved:"
         other: "%{count} errors prohibited this blueprint from being saved:"
 
-# http://guides.rubyonrails.org/i18n.html
   activerecord:
     models:
       blueprint: Blueprint

@@ -48,7 +48,6 @@ pl:
         one: "%{count} błąd uniemożliwił zapisanie:"
         other: "%{count} błędy uniemożliwiły zapisanie:"
 
-  # http://guides.rubyonrails.org/i18n.html
   activerecord:
     models:
       blueprint: Blueprint
